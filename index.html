@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+<!--Nina: Bootstrap CSS + JS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- End Bootstrap Essentials -->
+
+<!--Nina: added <link rel="" and <style> to h1 in <head> tag; please feel free to edit if you want! :) 
+I added Rina's <link rel="" to the top. -->
+<link rel="stylesheet" href = "styles.css"> 
+
+<style> 
+/*Nina: "Specific Tag" requirement = please feel free to edit/add more to the page. uwu 
+
+ Trevor: style tag added to h2 and #myheader
+ Trevor: added text manipulation, position and alignment of elements and hover tag */
+
+body{
+    /*Nina: Made our background look like space! Thought it would give our .row some more flavor. Feel free to remove. :) */
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+h1 {color:#cc0099} 
+
+h2.intro:hover {
+    color:aqua;
+    font-weight: bold;
+    font-size: large;
+    font-stretch: expanded;
+    position: fixed;
+    bottom:30px;
+    background-color:#000;
+    color:#fff;}
+
+#myheader{color:salmon} 
+
+/*Nina: Added this to give our rows some ~flavor!~ Feel free to edit. */
+.row {
+    margin: 10px;
+    background:#fff;
+    border-radius: 10px;
+    padding: 10px;
+    color:#000;}
+
+</style>
+<!--Nina: A cheeky title edit, because it's my repository now! Wehehehe.-->
+<title>AC:NH for 60 dollars? yeah</title>
+</head>
+
+
+<body>
+<!--Nina: Added a navigation bar! :) -->
+    <!--Took this class from Mark's sample page, because I liked it!-->
+<nav class="pl-md-5 navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <!-- Nina: Bootstrap - Little Title Heading! Wow!!! -->
+    <a class="navbar-brand" href="https://lycheefuzz.github.io/">Team 8's Bootstrap Page</a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <!--Nina: added a link to the navigation bar!-->
+        <a class="nav-link" href="https://youtu.be/zMtj4yJKuzk"> MEMBERS:</a>
+      </li>
+
+      <!--Nina: Empty Link -- Feel free to add
+      Trevor: added a link to our nav bar(: ) 
+      Rina: Added our member's Github to each one!-->
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/TrevorWindsor/TrevorWindsor.github.io">Trevor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/Asajia00/asajia00.github.io">Xinyu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/rinaru13/rina.github.io">Rina</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/lycheefuzz/lycheefuzz.github.io">Nina</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+
+
+<!-- This is where Trevor's work starts. :) -->
+<!-- Trevor: adding my grids(:-->
+<div class="container">
+  <!--INSTR: I added the margin-top property to this row since it was being covered up by the floating navbar.-->
+  <div class="row" style="margin-top: 200px;">
+    <div class="col">
+      small boy
+    </div>
+    <div class="col-6">
+      big boy
+    </div>
+    <div class="col">
+      small boy
+    </div>
+  </div>
+<!--Trevor: adding my flexbox! I got the base for it on w3-->
+<div class="d-flex p-3 bg-secondary text-white">
+  <div class="p-2 bg-info">Flex</div>
+  <div class="p-2 bg-warning">On</div>
+  <div class="p-2 bg-primary">The</div>
+  <div class="p-2 bg-warning">Haters</div>
+</div>
+<!--Added my jumbotron Trevor did (:-->
+<div class="container text-white" style="margin-top:70px">
+  <div class="jumbotron">
+    <h1>Kickflip Tutorial</h1>      
+    <p>Kickflip is the most popular Skateboarding trick for developing responsive, mobile-first projects on the web. To do a kickflip, GET GUD</p>
+  </div>  
+</div>   
+<!--headings
+Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
+<div class="container">
+<h1>My First Heading</h1>
+<!--INSTR: Did you mean to nest grid containers in each other like this or is there a missing </div>? Please indent nested code to make this easier to read.-->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-6">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+<div class="container">
+<h2 class="intro">My Second Heading</h2>
+<p id="myheader">My paragraph.</p>
+</div>
+<!--div-->
+<!-- Trevor changed div style to a different color to show use of ine line style=""-->
+<div class="container">
+  <div style="background-color:red">
+    <h3>This is a red heading</h3>
+    <p>and This is a red paragraph.</p>
+  </div>
+  <!--span-->
+  <!--INSTR: Because of the background image, this text becomes unreadable.-->
+  <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+  <!--strong-->
+ <p><strong>buff text</strong></p>
+ <!--em-->
+ <p><em>Emphasized text</em></p>
+<!--table-->
+<table>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100 cuz im broke</td>
+    </tr>
+  </table>
+  <!--lists-->
+  <ol>
+    <li>Sleep</li>
+    <li>Eat</li>
+    <li>Repeat</li>
+  </ol>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <!--image-->
+  <p>stole ninas photo because I didn't want to link my own lol whoops</p>
+  <!--INSTR: See my other note about Pictures!-->
+  <img src="pictures/K.K Pit.jpg" alt ="My brain cells when K.K comes to the island" width="300">
+</div>
+
+
+
+<!-- This is where Nina's work starts. :) -->
+
+    <style>
+     /*CSS Practice: Where I made all of my classes!*/ 
+    /* Added ID! */
+    #NinaHeader {
+            background-color:#ff99cc;
+            color:#9966ff;
+            padding: 35px;
+            text-align: center; 
+    }
+    
+    /*Added Classes! */
+    .NinaClass {
+        background-color:#9966ff;
+        color: #ff99cc;
+        padding: 20px;
+        text-align: center;
+    }
+    .NinaWantsMandatedColor {
+        color: #ff99cc;
+    }
+    
+    /* Added link manipulation */ 
+    a:link{
+        color:lavender;
+    }
+    a:hover{ 
+        color:black;
+    }
+    a:active{
+        color:#ff99cc;
+    }
+
+    /* Added image manipulation - taken from w3schools*/
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /*.row::after {
+        content: "";
+        clear: both;
+        display: table;
+    } */
+    </style>
+
+ <!--Bootstrap: Added a container! :) -->
+ <div class="container text-white" style="margin-top:70px">
+
+    <!--Bootstrap (but, really it's CSS): Makin' pretty boxes. :)-->
+        <div class="row">
+         <div class="col">
+
+    <!--HTML: Added headings! <h1> and <h2>-->
+    <h1 style="color:#ff99cc">Nina's first heading.</h1>
+    <p>Woah! look at that. My first paragraph!</p>
+
+    <!--HTML + CSS: Added color and !! <style> attribute :) !!-->
+    <h2 style="color:#ff99cc">And my second heading!</h2>
+    <p>ain't she cute? ^^ We learning.</p>
+
+
+    <!--HTML: Added <span>, <strong>, <em>, and <div> :: about pink, my fave color-->
+    <p>Can you tell what my favorite<span style="color:#ff99cc"> color </span>is? Probably not.<br>
+    <strong>I used to be one of those gorls who swore against pink, and now I am in love with it.</strong><br>
+    <em>Tragic, no? I could have been loving pink my whole life.</em></p> 
+
+    </div>
+</div>
+<!--ISNTR: We need to work on consistent indenting!-->
+
+    <!--HTML: Added <table> :: about ...rad..ness? idk. -->
+        <div class="row">
+        <div class="col">
+
+        <h2 style="color:#ff99cc">Table time! ~ </h2>
+
+       <br><table style="width:20%">
+        <tr>
+            <th>Woah!</th>
+            <th>Rad!</th>
+            <th>Sicc!</th>
+        </tr>
+        <tr>
+            <td>Isn't this so woah?</td>
+            <td>Isn't this so rad?</td>
+            <td>Isn't this so sicc?</td>
+        </tr>
+        </table>
+        <br><p style="color: #ff99cc;"><em>Table time over!</em> I enjoyed that!</p>
+
+     </div>
+</div>
+
+    <!--HTML: Added lists! <ol> and <ul> :: About Video Games.-->
+        <div class="row"> 
+        <div class="col">
+    <strong>Next: Here is a list of some of my favorite video games.</strong><br>
+<ul>
+    <li>Animal Crossing</li>
+    <li>The Bioshock Series (But, Bioshock Infinite is FIRE)</li>
+    <li>The Portal Series</li>
+    <li>Taiko no Tatsujin</li>
+    <li>The Rhythm Heaven Series</li>
+</ul>
+
+</div>
+<!--Bootstrap: lil' column addition. -->
+<div class="col">
+
+    <strong>Okay, now I will rank them from best to worst!</strong>
+<ol>
+    <li>...</li>
+    <li>Just kidding.</li>
+    <li>This is too difficult for me. :(</li>
+</ol>
+    </div>
+</div>
+
+<!--Bootstrap: A lil' flexbox!-->
+<div class="d-flex">
+    <div class="p-2 bg-info flex-fill">We flexin' on you!</div>
+    <div class="p-2 bg-warning flex-fill">I truly have no ideas on what fun thing I should do with this.</div>
+    <div class="p-2 bg-primary flex-fill">Sorry!</div>
+  </div>
+
+
+<!--Yo! This is where Nina's main CSS practice starts. 
+Edit (May 13, 2020): I removed some things for ~ aesthetic ~'s sake -->
+
+<div class="row">
+
+<h2 style="color:#ff99cc"> Me, during the entirety of this quarantine</h2>
+
+<!--CSS: Applying manipulation to images. :)-->
+<div class="row">
+    <div class="column">
+      <img src="pictures/productive.png" alt="Me when I wake up" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="pictures/nah.png" alt="Me 20 minutes later" style="width:100%">
+    
+</div>
+</div>
+
+<p>This has also been my brain. --> </p>
+<div class="spinner-border text-dark"></div>
+</div>
+
+<!--Bootstrap: Buttons! :)-->
+<div class="row">
+<div class="col">
+<h1 style="color:#ff99cc">Buttons! Wow!</h1>
+<p>I have a lot of random, really cursed + rare YouTube videos. Now is my time to use them.</p>
+
+<a href="https://youtu.be/m5qXMrAd_G4" class="btn btn-dark" role="button">quarantine hair</a>
+<a href="https://youtu.be/s7Ynyb4l7oM" class="btn btn-dark" role="button">quarantine driving</a>
+<a href="https://youtu.be/Ry5URU-Py2Q" class="btn btn-dark" role="button">quarantine politics</a>
+<a href="https://youtu.be/ZoakPxzqbH0" class="btn btn-dark" role="button">quarantine food</a>
+<a href="https://youtu.be/SBeYzoQPbu8" class="btn btn-dark" role="button">quarantine brain cells</a>
+<a href="https://youtu.be/qVSy4O3k3u4" class="btn btn-dark" role="button">quarantine smells</a><br>
+
+<br><p>Hope you got a goof + laugh out of this, hehe!</p>
+</div>
+</div>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+<!--Bootstrap: Added an image carousel! W3Schools carried me on this one. But, I learned a lot!-->
+
+    <!-- Indicators - from W3Schools -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow - from W3Schools -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pictures/godzilla picnic.jpeg" alt="Oh to be a kaiju" width="1100" height="800">
+      </div>
+      <div class="carousel-item">
+        <img src="pictures/ac flower.png" alt="now my island looks like poop" width="1100" height="900">
+       
+      </div>
+      <div class="carousel-item">
+        <img src="pictures/mood.png" alt="CSS Degree" width="1100" height="900">
+      </div>
+    </div>
+    
+    <!-- Left and right controls - from W3Schools -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+<!--CSS: Added a link :) + added hover/visibilty changes. :)  -->
+<div class="row">
+<div class="col">
+<a href="https://twitter.com/lycheefuzz"> follow me on twitter. uwu</a>
+        </div>
+        </div>
+
+<!--Bootstrap: Media Thank you message. :)-->
+    <div class="media border p-3 bg-white">
+    <img src="pictures/nah.png" alt="Nina P." class="mr-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="media-body">
+      <h4 style="color:black">Nina P. <small><i>Posted on May 13, 2020</i></small></h4>
+      <p style="color:violet">Thank you! See you soon! ~ Nina P. :3</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ~~ Dedided to leave this out of the Bootstrap page. Again, for ~aesthetic~'s sake. 
+But, I'm sentimental. So, I'm keeping it in here.-->
+
+   <!-- Added <img> :: About openin' up that dang pit. !! Also played with text-align/position + font-size. !! -->
+    <!-- <div style="text-align:center;">
+    <p style="font-size:60px">Thank you for reading all of this! I am happy to announce that I gained one (1) new brain cell!</p>
+    <br> 
+    <strong>Here, have a meme for your troubles!</strong>
+    <br> --> 
+    <!--INSTR: I see that the folder is named Pictures! Please rename it lowercase pictures without an exclamation mark. It's probably causing some errors for you all...-->
+   
+   <!-- <img src="pictures/K.K Pit.jpg" alt ="My brain cells when K.K comes to the island" width="300">
+
+    </div> --> 
+
+
+<!--And this is where Nina's work ends. :)-->
+
+
+
+
+
+
+
+<!--This is where Xinyu's work starts. :)-->
+
+ <div class="row">
+  <div class="col">
+<!--headings-->
+<h1 style="color:Tomato;">Xinyu First Heading</h1>
+
+<h1 style="background-color:DodgerBlue;">My second heading</h1>
+ 
+<!--paragraph-->
+
+<p>Hi,I am Xinyu, but you can call me Asa</p>
+<p>It's raining now</p>
+
+<!--div and span-->
+<div>
+    <p>I really like <span style="color:blue">blue</span> colour.</p>
+    <p>Do you like <span style="color:blue">blue</span>?</p>
+</div>
+
+<!--em-->
+<em>I like any kind of Chocolates.</em>
+<!--table-->
+<table>
+  <tr>
+    <th>Chocolate one</th>
+    <th>Chocolate two</th>
+  </tr>
+  <tr>
+    <td>Dove</td>
+    <td>Godiva</td>
+  </tr>
+</table>
+
+<!--ul and ol-->
+<div>
+    <p style="color:SkyBlue;">What else I like</p>
+<ul>
+    <li>Pizza</li>
+    <li>Cake</li>
+    <li>Cherry</li>
+</ul>
+    
+    <p style="color:SkyBlue;">How about you</p>
+<ol>
+    <li>What</li>
+    <li>do</li>
+    <li>you</li>
+    <li>like?</li>
+</ol>
+</div>
+
+<!--img-->
+ <img src="pictures/iStock-155097702-1030x684.jpg" alt ="chocolet" width="300">
+
+ </div>
+  </div>
+
+<div class="row">
+  <div class="col">
+<!--strong-->
+
+    <strong>Have a good day!</strong>
+    
+ </div>
+  </div>
+<!--Xinyu CSS Part starts here-->
+<div class="row">
+  <div class="col">   
+<br><h3>Xinyu CSS part starts here</h3>
+ 
+<!--style in head-->    
+<h1 style="text-align:center;">Hi</h1>
+
+<!--add #XinyuHeader id. :) -->
+  
+<style>
+#XinyuHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+
+<h1 id="XinyuHeader">This is Xinyu Header</h1>
+    
+<!--add .class-->
+<h3 class="XinyuClass">I like summer </h3> 
+<style>
+.Season {
+  background-color: orange;
+  color: tomato;
+  padding: 10px;
+} 
+</style>
+
+<h2 class="Season">Summer</h2>
+<p>Summer is hot.🌞</p>
+
+<h2 class="Season">Winter</h2>
+<p>Winter is cold.❄️</p>
+
+<h2 class="Season">Autumn</h2>
+<p>Autum is dry 😂.</p>
+
+<h2 class="Season">Spring</h2>    
+<p>Spring is warm ♨️.</p>  
+
+ <!--img-->
+ <img src="pictures/seasons.png" alt ="Seasons" width="300">
+ 
+ </div>
+  </div>
+<!--Bootstrap Grid--> 
+ <div class="row">
+  <div class="col-sm-4">Carton</div>
+  <div class="col-sm-4">Film</div>
+  <div class="col-sm-4">Funny</div>
+</div>
+ <!--Bootstrap Flexbox-->
+ <div class="d-flex">
+  <div class="p-2 bg-info flex-fill">Shin Chan</div>
+  <div class="p-2 bg-warning flex-fill">Shin Chan</div>
+  <div class="p-2 bg-primary flex-fill">Shin Chan </div>
+</div>
+ <br> <a href="https://youtu.be/6kqZqdWNYpM" class="btn btn-warning" role="button">Check This Out</a>
+
+
+  
+<!--Added a link and <a>-->
+
+<div class="row">
+  <div class="col">   
+ <a href="https://www.instagram.com/asa.jia/?hl=en"> This is my Instagram.</a>
+
+ </div>
+  </div>
+<!--This is where Xinyu's work ends. :)-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This is where Rina's work starts. :) -->
+<hr>
+
+<!--Bootstrap: Boxes around everything so it doesn't fade into the background-->
+<div class="row">
+  <div class="col">
+
+  <!-- Headings -->
+  <h1>RINA'S FIRST HEADING</h1>
+    <p>woah so dramatic, let's tone it down with the next one</p>
+  <h2>Rina's second heading</h2>
+    <p>much better :)</p>
+
+    <!-- Colors -->
+    <h3 style = "color:white" > Rina's third heading</h3>
+    <p> can you see it? prolly not cause it blends in with the background</p>
+
+    <!-- Add <div> and color to the box-->
+        <!--INSTR: Don't forget to put "quote" marks around attribute values!-->
+        <!--INSTR: [New comment] I expect you to read my comments and fix these things!-->
+    <div style=background-color:black>
+      <h3 style = "color:white"> Rina's fourth heading</h3>
+        <p> yay! you can prolly see it now!</p>
+    </div>
+
+  <!-- Span -->
+  <p>My favorite color is...
+      <!--INSTR: see above-->
+      <div style=background-color:black>
+          <span style = "color:white"> white </span> 
+      </div> 
+  </p>
+  
+  <!-- Strong -->
+  <p><strong>Alot of people say white is not a color and its a shade.</strong></p>
+  <!-- Emphasized <em> -->
+  <p><em>Should I have a backup favorite color?</em></p>
+
+<!--Bootstrap Practice: Buttons)-->
+  <a href="https://www.youtube.com/watch?v=5K6foouoB-M" class="btn btn-dark" role="button">YES</a>
+  <a href="https://www.youtube.com/watch?v=5K6foouoB-M" class="btn btn-dark" role="button">NO</a>
+  <a href="https://www.youtube.com/watch?v=5K6foouoB-M" class="btn btn-dark" role="button">I DONT CARE</a>
+  </div>
+</div>
+
+
+<!-- Table -->
+<div class="row">
+  <div class="col">
+  <table style="width:30%">
+      <tr>
+          <th>Corgi</th>
+          <th>Shiba</th>
+      </tr>
+      <tr>
+          <td>which one is cuter?</td>
+          <td>can you decide?</td>
+          <td>it will be difficult</td>
+      </tr>
+  </table>
+
+<!-- Lists <ol> ordered as in with numbers list <ul> unordered as in just bullets no numbers -->
+
+  <div>
+  <p><strong>Let's Compare</strong></p>
+
+  <p>Corgi</p>
+  <ol>
+      <li>Corgis have stubby legs</li>
+      <li>Corgis have cute butt</li>
+      <li>Corgis have short tail</li>
+  </ol>
+
+  <p>Shiba</p>
+  <ul>
+      <li>Shibas have curly tail</li>
+      <li>Shibas have normal legs</li>
+      <li>Shibas have fox like face</li>
+  </ul>
+  </div>
+
+  <!-- Picture-->
+  <p>Now look at them pics</p>
+  <img src="https://i.redd.it/b2tbkms7r1hx.png" alt= "corgi and shiba" width="300">
+  </div>
+</div>
+
+<!-- THIS IS HTML + CSS PRACTICE-->
+<!-- <link rel""> and <head>-->
+<div class="row">
+  <div class="col">
+    <h1>Now for some CSS Practice...</h1>
+    <h2>1) Using: externally linked stylesheet text file titled "styles.css"</h2>
+
+<!--Hi! Nina here! :) I think that there should only be one <head> tag per page, but I'm asking on Slack to make sure. :D 
+    I will edit if I am incorrect. For now, I have added your work to the top <head> tag. :) 
+
+<head>
+    <link rel="stylesheet" href = "styles.css">    
+</head> -->
+
+<!--That's correct. BUT ALSO, there should only be ONE <body> tag as well... so delete this extra one below.-->
+  <!--INSTR: Delete the extra body tag.-->
+
+    <body>
+    <h6>This is the 6th Heading. 
+        As you can see, the size is much smaller than the 1st and 2nd Heading...</h6>
+
+      <p13>This is the 13th paragraph. 
+            No changes to the size has been made. 
+            But the color is different</p13>
+
+    <h2>2) Using: id="" and .class and various style changes</h2>
+  </div>
+</div>
+
+<!-- id="" and class="" and .class practice-->
+<!--(this isn't in the external stylesheet)-->
+<style>
+#rinaHeader {
+    background-color:black;
+    color: white;
+    padding: 40px;
+    text-align:center;
+}
+.rinaClass{
+    background-color: white;
+    color:purple;
+    padding: 10px;
+}
+</style>
+
+
+<!-- A unique element -->
+<!--This header is UNIQUE to the id="rinaHeader" because HTML page can only have one of this id. 
+    But, I am guessing you can make your own id="" as well! 
+    BELOW, you will see practice of class = "" where same style is shared by multiple elements-->
+<h1 id="rinaHeader">This is Rina's Unique Header... Let's 3 things she likes below!</h1>
+<!--INSTR: YES! Classes for categories of elements that you want to lump together and style. IDs for unique elements that you need to refer to or treat special. Later, in javascript, you'll refer to ID to tell a function which element to change.-->
+
+<!-- This is where you have multiple similar elements using the class-->
+<div class="row">
+  <div class="col">
+    <h2 class="rinaClass">Matcha</h2>
+      <p>Nana's Green Tea Cafe is her current favorite.</p>
+    <h2 class="rinaClass">Korean Fried Chicken (KFC)</h2>
+      <p>Von's Chicken in Federal Way is her go to</p>
+    <h2 class="rinaClass">The Office</h2>
+      <p>Current favorite quotes</p>
+  </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+
+      <div id="demo2" class="carousel slide" data-ride="carousel">
+        <!--Bootstrap: Added an image carousel! W3Schools carried me on this one. But, I learned a lot!-->
+        
+            <!-- Indicators - from W3Schools -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo2" data-slide-to="0" class="active"></li>
+              <li data-target="#demo2" data-slide-to="1"></li>
+              <li data-target="#demo2" data-slide-to="2"></li>
+              <li data-target="#demo2" data-slide-to="3"></li>
+            </ul>
+            
+            <!-- The slideshow - from W3Schools -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.redd.it/s6hdwntp7a701.jpg" alt="Michael quote" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="https://66.media.tumblr.com/c21cd21bacdb0fbd11ed5d2b8298ea1a/tumblr_nc888kXABO1qki66fo1_1280.png" alt="Creed quote" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/02/1a/da/021ada6e80cbe82e90b7838c7a1ab5cc.jpg" alt="Dwight quote" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.redd.it/6tzq890byly01.jpg" alt="Kevin quote" style="width:100%">
+              </div>
+            </div>
+            
+            <!-- Left and right controls - from W3Schools -->
+            <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo2" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="column">
+  <!--CSS Practice: Adding link and hover/visibilty changes  -->
+  <p>Enjoyed the pictures? Learn fun facts about The Office!</p> <!-- Q: why is The office cut to the next line?-->
+  <a href="https://www.youtube.com/watch?v=3nxuoXuKkuc">Click here for YouTube video!</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+<!-- This is where Rina's work ends. :) -->
