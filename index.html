@@ -188,8 +188,50 @@ Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
   <!--INSTR: See my other note about Pictures!-->
   <img src="pictures/K.K Pit.jpg" alt ="My brain cells when K.K comes to the island" width="300">
 </div>
-
-
+<!--this is where Trevor's javascript assignment/game is!-->
+<p>You will be given a random number from 1 to 10 if you get a number higher than 5 you win.</p>
+<!--functionality for user is in the button tag!
+I created a function called "gamefunction"
+I declared many variables in there and 
+used an array for the final winning phrase, 
+I also used a while loop to have the code redone until x is greater than five.
+Finally I utilized a if else statement to create controlled responses.-->
+<button onclick="myFunction()">Win or Lose? hmmm</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+function myFunction(){
+  var x = Math.floor((Math.random() * 10) + 1);
+  var winner = ["You", "Have", "Won"];
+var text = "";
+var x = Math.floor((Math.random() * 10) + 1);
+var greeting = "";
+do{
+if (x <= 5) {
+    greeting += "<br>You lost because your number wasn't  higher than 5";
+  } else {
+    greeting += "<br>You, are a first time champion";
+    break;
+    }
+  text += "<br>The number is " + x;
+  x++;
+}
+while (x <= 5) {
+if (x <= 5) {
+    greeting += "<br>Loss";
+  } else {
+    greeting += "<br>Victory";
+    }
+  text += "<br>The number is " + x;
+  x++;
+}
+document.getElementById("demo").innerHTML = text;
+document.getElementById("demo2").innerHTML = greeting;
+document.getElementById("demo3").innerHTML = winner;
+}
+</script>
+<!--this is where trevor's game ends!-->
 
 <!-- This is where Nina's work starts. :) -->
 
