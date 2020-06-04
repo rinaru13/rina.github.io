@@ -410,6 +410,69 @@ Edit (May 13, 2020): I removed some things for ~ aesthetic ~'s sake -->
 
 </div>
 
+<!--Javascript: Start!-->
+<div class="row">
+  <div class="col">
+    
+    <!--Javascript: Interaction w/ User!-->
+    <button onclick="greet()">Get greeted.</button>
+
+    <p id="hello"></p>
+
+    <p>Here are some of my favorite games again! But, behind the scenes, I listed them fancier.</p>
+
+    <p id="game"></p>
+      
+    <p>Wanna see it again, but without bullet points? Sure you do.</p>
+
+    <p id="again"></p>
+
+      <script>
+        /*Javascript: Array and Variable Declaration! */
+        var games, text;
+        games = ["Taiko No Tatsujin", "Animal Crossing", "Bioshock"];
+        
+        text = "<ul>";
+        games.forEach(lycheeFunction); 
+        text += "</ul>";
+        document.getElementById("game").innerHTML = text;
+
+        /* Javascript: Function! */
+        function lycheeFunction(value){
+          text += "<li>" + value + "</li>";
+        }
+        
+        /*Javascript: Conditional logic! */
+          function greet(){
+            var hour = new Date().getHours();
+            var greetings;
+
+            if (hour < 12){
+              greetings = "What are you doing up? It's so early!";
+            }
+            else {
+              greetings = "Why, hello!";
+            }
+
+            document.getElementById("hello").innerHTML = greetings;
+        }
+
+        /*Javascript: Loop that runs until end condition is met.*/
+        var videoGames = ["Taiko No Tatsujin", "Animal Crossing", "Bioshock"];
+        var i = 0;
+        var text = "";
+
+        for (;videoGames[i];) {
+          text += videoGames[i] + "<br>";
+          i++;
+        }
+        document.getElementById("again").innerHTML = text;
+
+      </script>
+    </div>
+</div>
+  
+
 <!-- ~~ Dedided to leave this out of the Bootstrap page. Again, for ~aesthetic~'s sake. 
 But, I'm sentimental. So, I'm keeping it in here.-->
 
