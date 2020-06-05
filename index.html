@@ -688,7 +688,7 @@ But, I'm sentimental. So, I'm keeping it in here.-->
     
  <button type="button"
 onclick="document.getElementById('demo1').innerHTML = Date()">
-Click me to display Date and Time.</button>
+What time is it?.</button>
 
 
 <p id="demo1"></p>
@@ -696,10 +696,14 @@ Click me to display Date and Time.</button>
 <p id="demo3"></p>
 <script>
 
-document.getElementById("demo1").innerHTML = text;
-document.getElementById("demo2").innerHTML = greeting;
-document.getElementById("demo3").innerHTML = winner;
-}
+var x = myFunction(4, 3);
+document.getElementById("demo2").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+
+ document.getElementById("demo1").innerHTML = text;
+
 </script>
 
 
