@@ -948,6 +948,8 @@ function myFunction(a, b) {
   <div class="col">
 
     <h1 style="color:purple">Who is my favorite character in The Office?</h1>
+    <p id="time"></p>
+    <h6>If it is the right time of the day, she might answer...</h6>
     
     <!--Javascript: Interaction w/ User! Possible answers-->
     <button onclick="michael()">Michael</button>
@@ -960,6 +962,7 @@ function myFunction(a, b) {
     <p id="notpam"></p>
     <button onclick="giveup()">I Give Up</button>
     <p id="giveanswer"></p>
+  
 
     <p>Honestly, there are way too many good characters in the show, let me rank them!</p>
 
@@ -967,12 +970,16 @@ function myFunction(a, b) {
 
       <script>
         /*Javascript: Array and Variable Declaration! */
-        var top5, text;
-        top5 = ["Creed", "Dwight", "Michael", "Jan", "Angela"];
-        text = "<ul>";
-        games.forEach(rinaFunction); 
-        text += "</ul>";
+        var top5list, text, timerightnow;
+        top5list = ["Creed", "Dwight", "Michael", "Jan", "Angela"];
+        text = "<ol>";
+        timerightnow = new Date();
+        top5list.forEach(rinaFunction); 
+        text += "</ol>";
         document.getElementById("top5").innerHTML = text;
+        document.getElementById("time").innerHTML = timerightnow
+
+        
 
 
 
@@ -980,7 +987,7 @@ function myFunction(a, b) {
         function rinaFunction(value){
           text += "<li>" + value + "</li>";
         }
-        
+
         /*Javascript: Conditional logic for the answer choices */
           function dwight(){
             var hour = new Date().getHours();
