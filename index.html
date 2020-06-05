@@ -686,24 +686,19 @@ But, I'm sentimental. So, I'm keeping it in here.-->
    <h1 style="color:Violet;">Javascript</h1>
  
     
- <p>Click the button to get a time-based greeting:</p>
+ <button type="button"
+onclick="document.getElementById('demo1').innerHTML = Date()">
+Click me to display Date and Time.</button>
 
-<button onclick="myFunction()">Try it</button>
 
-<p id="demo"></p>
-
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
 <script>
-function myFunction() {
-  var greeting;
-  var time = new Date().getHours();
-  if (time < 10) {
-    greeting = "Good morning";
-  } else if (time < 20) {
-    greeting = "Good day";
-  } else {
-    greeting = "Good evening";
-  }
-  document.getElementById("demo").innerHTML = greeting;
+
+document.getElementById("demo1").innerHTML = text;
+document.getElementById("demo2").innerHTML = greeting;
+document.getElementById("demo3").innerHTML = winner;
 }
 </script>
 
