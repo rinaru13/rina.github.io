@@ -685,6 +685,14 @@ But, I'm sentimental. So, I'm keeping it in here.-->
   <div class="col">
    <h1 style="color:Violet;">Javascript</h1>
  
+    <!--Interaction-->
+   if (time < 10) {
+  greeting = "Wake up";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Go to bed";
+}
    <script>
    /*Function-->*/
    function myFunction(p1, p2) {
@@ -693,14 +701,7 @@ But, I'm sentimental. So, I'm keeping it in here.-->
   /*Array*/
    var cars = ["Saab", "Volvo", "BMW"];
    
-  /* Conditional logic*/
-   if (time < 10) {
-  greeting = "Wake up";
-} else if (time < 20) {
-  greeting = "Good day";
-} else {
-  greeting = "Go to bed";
-}
+
   /*Loop*/
    var cars = ["BMW", "Volvo", "Saab", "Ford"];
 var i = 0;
@@ -716,12 +717,7 @@ for (;cars[i];) {
   </script>
   </div>
   </div>
- <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
+ 
 </body>
 </html>
 
