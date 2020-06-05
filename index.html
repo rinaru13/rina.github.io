@@ -686,17 +686,57 @@ But, I'm sentimental. So, I'm keeping it in here.-->
    <h1 style="color:Violet;">Javascript</h1>
  
     <!--Conditional logic-->
-   <button onclick="What should I Do()">greeting.</button>
-   
-   <script>
-    /*Conditional*/
-    if (time < 10) {
-  greeting = "Wake up";
-} else if (time < 20) {
-  greeting = "eat";
-} else {
-  greeting = "Go to bed";
+   <p>Click the button to get a time-based greeting:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var greeting;
+  var time = new Date().getHours();
+  if (time < 10) {
+    greeting = "Good morning";
+  } else if (time < 20) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+  document.getElementById("demo").innerHTML = greeting;
 }
+</script>
+   
+<!--Loop-->  
+   <p id="demo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+   <!--Arrays-->   
+<p id="demo"></p>
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+</script>   
+
+<!--Function-->
+<p id="demo"></p>
+
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(5, 8);
+</script>
    
    
 
@@ -704,7 +744,7 @@ But, I'm sentimental. So, I'm keeping it in here.-->
    
   
   
-  </script>
+  
   </div>
   </div>
  
