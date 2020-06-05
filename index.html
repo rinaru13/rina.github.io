@@ -703,7 +703,7 @@ function myFunction(a, b) {
   return a * b;
 
  document.getElementById("demo1").innerHTML = text;
-
+}
 </script>
 
 
@@ -940,6 +940,128 @@ function myFunction(a, b) {
   <a href="https://www.youtube.com/watch?v=3nxuoXuKkuc">Click here for YouTube video!</a>
   </div>
 </div>
+
+
+
+<!--Javascript Practice-->
+<div class="row">
+  <div class="col">
+
+    <h1 style="color:purple">Who is my favorite character in The Office?</h1>
+    
+    <!--Javascript: Interaction w/ User! Possible answers-->
+    <button onclick="michael()">Michael</button>
+    <p id="notmichael"></p>
+    <button onclick="dwight()">Dwight</button>
+    <p id="notdwight"></p>
+    <button onclick="jim()">Jim</button>
+    <p id="notjim"></p>
+    <button onclick="pam()">Pam</button>
+    <p id="notpam"></p>
+    <button onclick="giveup()">I Give Up</button>
+    <p id="giveanswer"></p>
+
+    <p>Honestly, there are way too many good characters in the show, let me rank them!</p>
+
+    <p id="top5"></p>      
+
+      <script>
+        /*Javascript: Array and Variable Declaration! */
+        var top5, text;
+        top5 = ["Creed", "Dwight", "Michael", "Jan", "Angela"];
+        text = "<ul>";
+        games.forEach(rinaFunction); 
+        text += "</ul>";
+        document.getElementById("top5").innerHTML = text;
+
+
+
+        /* Javascript: Function! */
+        function rinaFunction(value){
+          text += "<li>" + value + "</li>";
+        }
+        
+        /*Javascript: Conditional logic for the answer choices */
+          function dwight(){
+            var hour = new Date().getHours();
+            var reply;
+
+            if (hour < 12){
+              reply = "It's too early. Try again later.";
+            }
+            else {
+              reply = "Nope";
+            }
+
+            document.getElementById("notdwight").innerHTML = reply;
+        }
+
+        function michael(){
+            var hour = new Date().getHours();
+            var reply;
+
+            if (hour < 12){
+              reply = "It's too early. Try again later.";
+            }
+            else {
+              reply = "Nope";
+            }
+
+            document.getElementById("notmichael").innerHTML = reply;
+        }
+
+        function jim(){
+            var hour = new Date().getHours();
+            var reply;
+
+            if (hour < 12){
+              reply = "It's too early. Try again later.";
+            }
+            else {
+              reply = "Nope";
+            }
+
+            document.getElementById("notjim").innerHTML = reply;
+        }
+
+        function pam(){
+            var hour = new Date().getHours();
+            var reply;
+
+            if (hour < 12){
+              reply = "It's too early. Try again later.";
+            }
+            else {
+              reply = "Nope";
+            }
+
+            document.getElementById("notpam").innerHTML = reply;
+        }
+
+
+        function giveup(){
+            var hour = new Date().getHours();
+            var reply;
+
+            if (hour < 12){
+              reply = "It's too early. Try again later.";
+            }
+            else {
+              reply = "Creed is my favorite!";
+            }
+
+            document.getElementById("giveanswer").innerHTML = reply;
+        }
+
+      </script>
+    </div>
+</div>
+  
+
+
+
+
+
 
 </body>
 </html>
