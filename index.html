@@ -686,30 +686,58 @@ But, I'm sentimental. So, I'm keeping it in here.-->
    <h1 style="color:Violet;">Javascript</h1>
  
     <!--Conditional logic-->
-   <html>
-<body>
-   <p>Click the button to get a time-based greeting:</p>
+    <button onclick="greet()">Hey.</button>
 
-<button onclick="myFunction()">Hey</button>
+    <p id="one"></p>
+<p>These are some food I like</p>
 
-<p id="demo"></p>
+    <p id="two"></p>
+<p> What else      
+
+    <p id="three"></p>
 
 <script>
-function myFunction() {
-  var greeting;
-  var time = new Date().getHours();
-  if (time < 10) {
-    greeting = "Good morning";
+ /*Javascript: Array  */
+        var food, text;
+        Food = ["noodle", "Pancake", "Rice"];
+        
+        text = "<ul>";
+        food.forEach(lycheeFunction); 
+        text += "</ul>";
+        document.getElementById("two").innerHTML = text;
+
+        /*Function */
+        function lycheeFunction(value){
+          text += "<li>" + value + "</li>";
+        }
+        
+        /*Conditional logic */
+          function greet(){
+            var hour = new Date().getHours();
+            var greetings;
+           if (time < 10) {
+    greeting = "Wake Up";
   } else if (time < 20) {
-    greeting = "Good day";
+    greeting = "WOW";
   } else {
-    greeting = "Good evening";
-  }
-  document.getElementById("demo").innerHTML = greeting;
-}
-</script>
- </body>
-</html>  
+    greeting = "Time to Sleep";
+            document.getElementById("one").innerHTML = greetings;
+        }
+
+       
+ 
+ /*Loop */
+        var Food = ["Pizza", "hot dog", "anything"];
+        var i = 0;
+        var text = "";
+
+        for (;Food[i];) {
+          text += food[i] + "<br>";
+          i++;
+        }
+        document.getElementById("Three").innerHTML = text;
+ </script>
+ 
 
 
 
