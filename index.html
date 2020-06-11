@@ -20,6 +20,7 @@
 <!--Nina: added <link rel="" and <style> to h1 in <head> tag; please feel free to edit if you want! :) 
 I added Rina's <link rel="" to the top. -->
 <link rel="stylesheet" href = "styles.css"> 
+<!--INSTR: The above file doesn't seem to exist. I see a team8styles.css though.-->
 
 <style> 
 /*Nina: "Specific Tag" requirement = please feel free to edit/add more to the page. uwu 
@@ -39,6 +40,7 @@ h2.intro:hover {
     font-size: large;
     font-stretch: expanded;
     position: fixed;
+    /*INSTR: the "position: fixed" property is causing the heading to appear at the bottom of the page causing it to glitch out.*/
     bottom:30px;
     background-color:#000;
     color:#fff;}
@@ -83,6 +85,7 @@ h2.intro:hover {
         <a class="nav-link" href="https://github.com/Asajia00/asajia00.github.io">Xinyu</a>
       </li>
       <li class="nav-item">
+        <!--INSTR: The below link works, but it reall shouldn't since you changed your repository name. lol.-->
         <a class="nav-link" href="https://github.com/rinaru13/rina.github.io">Rina</a>
       </li>
       <li class="nav-item">
@@ -121,12 +124,12 @@ h2.intro:hover {
 <!--Added my jumbotron Trevor did (:-->
 <div class="container text-white" style="margin-top:70px">
   <div class="jumbotron">
-    <h1>Kickflip Tutorial</h1>      
+    <h1>Kickflip Tutorial</h1>
+    <!--INSTR: The background color here makes this text below, which is white, really hard to read...-->      
     <p>Kickflip is the most popular Skateboarding trick for developing responsive, mobile-first projects on the web. To do a kickflip, GET GUD</p>
   </div>  
 </div>   
-<!--headings
-Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
+<!--headings Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
 <div class="container">
 <h1>My First Heading</h1>
 <!--INSTR: Did you mean to nest grid containers in each other like this or is there a missing </div>? Please indent nested code to make this easier to read.-->
@@ -156,6 +159,7 @@ Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
   </div>
   <!--span-->
   <!--INSTR: Because of the background image, this text becomes unreadable.-->
+  <!--INSTR: It doesn't appear this was fixed since last time I made the comment above.-->
   <p>My mother has <span style="color:blue">blue</span> eyes.</p>
   <!--strong-->
  <p><strong>buff text</strong></p>
@@ -190,46 +194,44 @@ Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
 </div>
 <!--this is where Trevor's javascript assignment/game is!-->
 <p>You will be given a random number from 1 to 10 if you get a number higher than 5 you win.</p>
-<!--functionality for user is in the button tag!
-I created a function called "gamefunction"
-I declared many variables in there and 
-used an array for the final winning phrase, 
-I also used a while loop to have the code redone until x is greater than five.
-Finally I utilized a if else statement to create controlled responses.-->
-<button onclick="myFunction()">Win or Lose? hmmm</button>
+<!--functionality for user is in the button tag! I created a function called "gamefunction" I declared many variables in there and used an array for the final winning phrase, I also used a while loop to have the code redone until x is greater than five. Finally I utilized a if else statement to create controlled responses.-->
 <p id="demo"></p>
 <p id="demo2"></p>
 <p id="demo3"></p>
+<button onclick="myFunction()">Win or Lose? hmmm</button>
 <script>
-function myFunction(){
-  var x = Math.floor((Math.random() * 10) + 1);
-  var winner = ["You", "Have", "Won"];
-var text = "";
-var x = Math.floor((Math.random() * 10) + 1);
-var greeting = "";
-do{
-if (x <= 5) {
-    greeting += "<br>You lost because your number wasn't  higher than 5";
-  } else {
-    greeting += "<br>You, are a first time champion";
-    break;
+  function myFunction(){
+    var x = Math.floor((Math.random() * 10) + 1);
+    var winner = ["You", "Have", "Won"];
+    var text = "";
+    var x = Math.floor((Math.random() * 10) + 1);
+  //INSTR: The above line appears twice.
+    var greeting = "";
+    do{
+      if (x <= 5) {
+        greeting += "<br>You lost because your number wasn't  higher than 5";
+      } else {
+        greeting += "<br>You, are a first time champion";
+        break;
+      }
+      text += "<br>The number is " + x;
+      x++;
     }
-  text += "<br>The number is " + x;
-  x++;
-}
-while (x <= 5) {
-if (x <= 5) {
-    greeting += "<br>Loss";
-  } else {
-    greeting += "<br>Victory";
-    }
-  text += "<br>The number is " + x;
-  x++;
-}
-document.getElementById("demo").innerHTML = text;
-document.getElementById("demo2").innerHTML = greeting;
-document.getElementById("demo3").innerHTML = winner;
-}
+  //INSTR: I'm not sure why you need a loop to test for all conditions of x above... It'd be simpler without the "do" command which would let you delete "x++" too.
+  //INSTR: Same thing below. Why put this in a while loop?
+  while (x <= 5) {
+  if (x <= 5) {
+      greeting += "<br>Loss";
+    } else {
+      greeting += "<br>Victory";
+      }
+    text += "<br>The number is " + x;
+    x++;
+  }
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("demo2").innerHTML = greeting;
+  document.getElementById("demo3").innerHTML = winner;
+  }
 </script>
 <!--this is where trevor's game ends!-->
 
